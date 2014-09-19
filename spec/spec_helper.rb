@@ -1,9 +1,9 @@
 # Remember environment variables from week 1?
 ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 
-# this needs to be after ENV["RACK_ENV"] = 'test' 
+# this needs to be after ENV["RACK_ENV"] = 'test'
 # because the server needs to know
-# what environment it's running it: test or development. 
+# what environment it's running it: test or development.
 # The environment determines what database to use.
 
 require './app/server'
@@ -44,12 +44,12 @@ RSpec.configure do |config|
     DatabaseCleaner.start
   end
 
-  config.after(:each) do 
+  config.after(:each) do
     DatabaseCleaner.clean
   end
 
-# The settings below are suggested to provide a good initial experience
-# with RSpec, but feel free to customize to your heart's content.
+  # The settings below are suggested to provide a good initial experience
+  # with RSpec, but feel free to customize to your heart's content.
 =begin
   # These two settings work together to allow you to limit a spec run
   # to individual examples or groups you care about by tagging them with

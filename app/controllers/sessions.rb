@@ -21,7 +21,7 @@ delete '/sessions' do
   redirect to('/')
 end
 
-get '/sessions/recover' do 
+get '/sessions/recover' do
   erb :"/sessions/recover"
 end
 

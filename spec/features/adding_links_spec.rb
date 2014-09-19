@@ -26,8 +26,8 @@ feature "Users can add tags to links" do
 	scenario "with a few tags" do
 		visit "/"
 		add_link("http://www.makersacademy.com",
-							"Makers Academy",
-							['education', 'ruby'])
+				 "Makers Academy",
+				 ['education', 'ruby'])
 		link = Link.first
 		expect(link.tags.map(&:text)).to include("education")
 		expect(link.tags.map(&:text)).to include("ruby")
@@ -43,4 +43,3 @@ feature "Users can add tags to links" do
 	end
 
 end
-

@@ -7,4 +7,4 @@ class Link
 	property :url,		String
 	has n,	:tags, :through => Resource
 
-end	
+end
